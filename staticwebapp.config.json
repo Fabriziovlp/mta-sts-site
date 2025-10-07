@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "route": "/.well-known/mta-sts.txt",
+      "rewrite": "/.well-known/mta-sts.txt",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "mimeTypes": { ".txt": "text/plain" },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/.well-known/*"]
+  }
+}
